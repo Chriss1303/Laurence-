@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoops & Threads - Basketball Jersey Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/hero.css">
+    <link rel="stylesheet" href="src/styles/products.css">
+    <link rel="stylesheet" href="src/styles/cart.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header id="header">
+        <nav class="nav-container">
+            <div class="logo">Hoops & Threads</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#jerseys">Jerseys</a>
+                <a href="#accessories">Accessories</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-cart">
+                <button id="cart-btn" class="cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Premium Basketball Jerseys</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Wear What The Pros Wear</p>
+                <a href="#jerseys" class="cta-button" data-aos="fade-up" data-aos-delay="400">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="jerseys" class="products">
+            <h2 data-aos="fade-up">Featured Jerseys</h2>
+            <div class="products-grid" id="jerseys-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="accessories" class="products">
+            <h2 data-aos="fade-up">Accessories</h2>
+            <div class="products-grid" id="accessories-grid">
+                <!-- Accessories will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@hoopsandthreads.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#jerseys">Jerseys</a>
+                <a href="#accessories">Accessories</a>
+                <a href="#">Size Guide</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hoops & Threads. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html
